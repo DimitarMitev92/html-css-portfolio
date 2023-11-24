@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Dimitar Mitev | Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <a href="" class="header--logo">DM | Portfolio</a>
+      <input class="header--menu-btn" type="checkbox" id="menu-btn" />
+      <label class="header--menu-icon" for="menu-btn"
+        ><span class="header--navicon"></span
+      ></label>
+      <ul class="header--menu">
+        <li class="header--list-item">
+          <a class="header--list-ancher" href="#certificates">Certificates</a>
+        </li>
+        <li class="header--list-item">
+          <a class="header--list-ancher" href="#github-projects">Projects</a>
+        </li>
+        <li class="header--list-item">
+          <a class="header--list-ancher" href="#previous-experience"
+            >Experience</a
+          >
+        </li>
+        <li class="header--list-item">
+          <a class="header--list-ancher" href="#contact-me">Contact</a>
+        </li>
+      </ul>
+    </header>
+    <main class="main">
+      <div class="hero" id="about-me">
+        <div class="hero--section">
+          <div class="wrapper">
+            <div class="static-txt">I am</div>
+            <ul class="dynamic-txts">
+              <li class="dynamic-txts--list">
+                <span class="dynamic-txts--span"
+                  ><em class="dynamic-txts--span__em">Dimitar Mitev</em></span
+                >
+              </li>
+
+              <li class="dynamic-txts--list">
+                <span class="dynamic-txts--span"
+                  ><em class="dynamic-txts--span__em">Civil Engineer</em></span
+                >
+              </li>
+              <li class="dynamic-txts--list">
+                <span class="dynamic-txts--span"
+                  ><em class="dynamic-txts--span__em">Web Developer</em></span
+                >
+              </li>
+            </ul>
+          </div>
+          <p class="hero--section__paragraph">
+            Highly motivated and dedicated junior JavaScript developer with a
+            strong passion for web development. Seeking an opportunity to
+            contribute to a dynamic team and further enhance my skills in
+            JavaScript development.
+          </p>
+          <div class="wrapper">
+            <a
+              href="https://github.com/DimitarMitev92"
+              target="_blank"
+              class="hero--icon"
+              ><img src="./assets/icons/github.svg" alt="github"
+            /></a>
+            <a
+              href="https://www.linkedin.com/in/%D0%B4%D0%B8%D0%BC%D0%B8%D1%82%D1%8A%D1%80-%D0%BC%D0%B8%D1%82%D0%B5%D0%B2-a356b8260/"
+              target="_blank"
+              class="hero--icon"
+              ><img src="./assets/icons/linkedin.svg" alt="linkedin"
+            /></a>
+          </div>
+        </div>
+        <figure class="hero--image__container">
+          <img
+            src="./assets/dimitar-crop.jpeg"
+            alt="photo of Dimitar"
+            class="hero--image"
+          />
+        </figure>
+      </div>
+      <section class="technologies">
+        <h2 class="technologies--heading">Technologies</h2>
+        <div class="technologies--wrapper">
+          <img
+            class="technologies--icon"
+            src="./assets/technologies/html.svg"
+            alt="html icon"
+          />
+          <img
+            class="technologies--icon"
+            src="./assets/technologies/css.svg"
+            alt="css icon"
+          />
+          <img
+            class="technologies--icon"
+            src="./assets/technologies/javascript.svg"
+            alt="javascript"
+          />
+          <img
+            class="technologies--icon"
+            src="./assets/technologies//typescript.svg"
+            alt="typescript"
+          />
+          <img
+            class="technologies--icon"
+            src="./assets/technologies/react.svg"
+            alt="react icon"
+          />
+          <img
+            class="technologies--icon"
+            src="./assets/technologies/angular.svg"
+            alt="angular icon"
+          />
+          <img
+            class="technologies--icon"
+            src="./assets/technologies/node-js.svg"
+            alt="nodejs icon"
+          />
+          <img
+            class="technologies--icon"
+            src="./assets/technologies/express.svg"
+            alt="expressjs icon"
+          />
+          <img
+            class="technologies--icon"
+            src="./assets/technologies/mongodb.svg"
+            alt="mongodb icon"
+          />
+          <img
+            class="technologies--icon"
+            src="./assets/technologies/mysql.svg"
+            alt="mysql icon"
+          />
+        </div>
+      </section>
+      <section class="educations" id="educations">
+        <h2 class="educations--heading">Educations</h2>
+        <div class="educations--wrapper">
+          <article class="educations--article">
+            <h3 class="eucations--article__heading">
+              Software University - Sofia
+            </h3>
+            <p class="eucations--article__paragraph">
+              JavaScript Web Developer - 6.00 Grade
+            </p>
+          </article>
+          <article class="educations--article">
+            <h3 class="eucations--article__heading">UACEG - Sofia</h3>
+            <p class="eucations--article__paragraph">
+              Civil Engineer - Master Degree
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="certificates" id="certificates">
+        <h2 class="certificates--heading">Certificates</h2>
+        <div class="certificates--wrapper" id="carousel-container">
+          <input
+            class="certificates--radio"
+            type="radio"
+            name="position"
+            checked
+          />
+          <input class="certificates--radio" type="radio" name="position" />
+          <input class="certificates--radio" type="radio" name="position" />
+          <input class="certificates--radio" type="radio" name="position" />
+          <input class="certificates--radio" type="radio" name="position" />
+          <div class="certificates--carousel">
+            <div class="certificates--carousel-item"></div>
+            <div class="certificates--carousel-item"></div>
+            <div class="certificates--carousel-item"></div>
+            <div class="certificates--carousel-item"></div>
+            <div class="certificates--carousel-item"></div>
+          </div>
+        </div>
+      </section>
+      <section class="github-projects" id="github-projects">
+        <h2 class="github-projects--heading">Projects</h2>
+        <article class="github-projects--wrapper">
+          <div class="github-projects--card">
+            <img
+              class="card--image"
+              src="./assets/github-repos/archnews.png"
+              alt="archnews"
+            />
+            <div class="card--content">
+              <div class="card--wrapper">
+                <h5 class="card--heading">ARCHNEWS</h5>
+                <p class="card--paragraph">React | Bootstrap</p>
+                <a
+                  class="card--repo"
+                  href="https://github.com/DimitarMitev92/archnews-react-softuni"
+                  target="_blank"
+                  >GitHub Repo</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="github-projects--card">
+            <img
+              class="card--image"
+              src="./assets/github-repos/clipz.png"
+              alt="clipz"
+            />
+            <div class="card--content">
+              <div class="card--wrapper">
+                <h5 class="card--heading">CLIPZ</h5>
+                <p class="card--paragraph">Angular | Typescript</p>
+                <a
+                  class="card--repo"
+                  href="https://github.com/DimitarMitev92/clipz-angular-project"
+                  target="_blank"
+                  >GitHub Repo</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="github-projects--card">
+            <img
+              class="card--image"
+              src="./assets/github-repos/evogym.png"
+              alt="evogym"
+            />
+            <div class="card--content">
+              <div class="card--wrapper">
+                <h5 class="card--heading">EVOGYM</h5>
+                <p class="card--paragraph">React | TypeScript | TailwindCSS</p>
+                <a
+                  class="card--repo"
+                  href="https://github.com/DimitarMitev92/responsive-react-fitness-app-with-typescript"
+                  target="_blank"
+                  >GitHub Repo</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="github-projects--card">
+            <img
+              class="card--image"
+              src="./assets/github-repos/nike.png"
+              alt="nike"
+            />
+            <div class="card--content">
+              <div class="card--wrapper">
+                <h5 class="card--heading">NIKE</h5>
+                <p class="card--paragraph">React | TailwindCSS</p>
+                <a
+                  class="card--repo"
+                  href="https://github.com/DimitarMitev92/react-tailwindcss-app-Nike"
+                  target="_blank"
+                  >GitHub Repo</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="github-projects--card">
+            <img
+              class="card--image"
+              src="./assets/github-repos/omnifood.png"
+              alt="omnifood"
+            />
+            <div class="card--content">
+              <div class="card--wrapper">
+                <h5 class="card--heading">OMNIFOOD</h5>
+                <p class="card--paragraph">HTML | CSS</p>
+                <a
+                  class="card--repo"
+                  href="https://github.com/DimitarMitev92/omnifood-udemy"
+                  target="_blank"
+                  >GitHub Repo</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="github-projects--card">
+            <img
+              class="card--image"
+              src="./assets/github-repos/realestatedeals.png"
+              alt="realestatedeals"
+            />
+            <div class="card--content">
+              <div class="card--wrapper">
+                <h5 class="card--heading">REAL ESTATE DEALS</h5>
+                <p class="card--paragraph">
+                  Angular | TypeScript | Tailwindcss
+                </p>
+                <a
+                  class="card--repo"
+                  href="https://github.com/DimitarMitev92/RealEstateDeals-angular-softuni"
+                  target="_blank"
+                  >GitHub Repo</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="github-projects--card">
+            <img
+              class="card--image"
+              src="./assets/github-repos/restaurant.png"
+              alt="restaurant"
+            />
+            <div class="card--content">
+              <div class="card--wrapper">
+                <h5 class="card--heading">RESTAURANT</h5>
+                <p class="card--paragraph">React</p>
+                <a
+                  class="card--repo"
+                  href="https://github.com/DimitarMitev92/fully-responsive-restaurant-website-with-ReactJS"
+                  target="_blank"
+                  >GitHub Repo</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="github-projects--card">
+            <img
+              class="card--image"
+              src="./assets/github-repos/social-media.png"
+              alt="social media"
+            />
+            <div class="card--content">
+              <div class="card--wrapper">
+                <h5 class="card--heading">SOCIAL MEDIA</h5>
+                <p class="card--paragraph">MERN</p>
+                <a
+                  class="card--repo"
+                  href="https://github.com/DimitarMitev92/fullstack-responsive-MERN-app---Social-Media/tree/main"
+                  target="_blank"
+                  >GitHub Repo</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="github-projects--card">
+            <img
+              class="card--image"
+              src="./assets/github-repos/swipe.png"
+              alt="swipe-repo"
+            />
+            <div class="card--content">
+              <div class="card--wrapper">
+                <h5 class="card--heading">SWIPE</h5>
+                <p class="card--paragraph">HTML | CSS</p>
+                <a
+                  class="card--repo"
+                  href="https://github.com/DimitarMitev92/swipe-responsive-app"
+                  target="_blank"
+                  >GitHub Repo</a
+                >
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+      <section class="previous-experience" id="previous-experience">
+        <h2 class="previous-experience--heading">Experience</h2>
+        <article class="previous-experience--article">
+          <h3 class="previous-experience--article--heading">SARIS LTD</h3>
+          <p class="previous-experience--article--subheading">REAL SITE</p>
+          <div class="previous-experience--article--wrapper">
+            <img
+              class="previous-experience--article--image"
+              src="./assets/buildings/Real-Site/site01.jpeg"
+              alt="real site 1"
+            />
+            <img
+              class="previous-experience--article--image"
+              src="./assets/buildings/Real-Site/site02.jpeg"
+              alt="real site 2"
+            />
+            <img
+              class="previous-experience--article--image"
+              src="./assets/buildings/Real-Site/site03.jpeg"
+              alt="real site 3"
+            />
+            <img
+              class="previous-experience--article--image"
+              src="./assets/buildings/Real-Site/site04.jpeg"
+              alt="real site 4"
+            />
+          </div>
+        </article>
+        <article class="previous-experience--article">
+          <h3 class="previous-experience--article--heading">IDEA HOME LTD</h3>
+          <p class="previous-experience--article--subheading">HOME RESIDENCE</p>
+          <div class="previous-experience--article--wrapper">
+            <img
+              class="previous-experience--article--image"
+              src="./assets/buildings/Idea-Residence/idea-residence01.jpeg"
+              alt="idea residence 1"
+            />
+            <img
+              class="previous-experience--article--image"
+              src="./assets/buildings/Idea-Residence/idea-residence02.jpeg"
+              alt="idea residence 2"
+            />
+            <img
+              class="previous-experience--article--image"
+              src="./assets/buildings/Idea-Residence/idea-residence03.jpeg"
+              alt="idea residence 3"
+            />
+            <img
+              class="previous-experience--article--image"
+              src="./assets/buildings/Idea-Residence/idea-residence04.jpeg"
+              alt="idea residence 4"
+            />
+          </div>
+        </article>
+        <article class="previous-experience--article">
+          <h3 class="previous-experience--article--heading">IDEA HOME LTD</h3>
+          <p class="previous-experience--article--subheading">
+            CASTANEA RESIDENCE
+          </p>
+          <div class="previous-experience--article--wrapper">
+            <img
+              class="previous-experience--article--image"
+              src="./assets/buildings/Castanea-Residence/idea-castanea01.jpeg"
+              alt="castanea 1"
+            />
+            <img
+              class="previous-experience--article--image"
+              src="./assets/buildings/Castanea-Residence/idea-castanea02.jpeg"
+              alt="castanea 2"
+            />
+            <img
+              class="previous-experience--article--image"
+              src="./assets/buildings/Castanea-Residence/idea-castanea03.jpeg"
+              alt="castanea 3"
+            />
+            <img
+              class="previous-experience--article--image"
+              src="./assets/buildings/Castanea-Residence/idea-castanea04.jpeg"
+              alt="castanea 4"
+            />
+          </div>
+        </article>
+        <article class="previous-experience--article">
+          <h3 class="previous-experience--article--heading">
+            INFINITY PROPERTY LTD
+          </h3>
+          <p class="previous-experience--article--subheading">VANILLA</p>
+          <div class="previous-experience--article--wrapper">
+            <img
+              class="previous-experience--article--image"
+              src="./assets/buildings/Vanilla/vanilla01.jpeg"
+              alt="Vanilla 1"
+            />
+            <img
+              class="previous-experience--article--image"
+              src="./assets/buildings/Vanilla/vanilla02.jpeg"
+              alt="Vanilla 2"
+            />
+            <img
+              class="previous-experience--article--image"
+              src="./assets/buildings/Vanilla/vanilla03.jpeg"
+              alt="Vanilla 3"
+            />
+            <img
+              class="previous-experience--article--image"
+              src="./assets/buildings/Vanilla/vanilla04.jpeg"
+              alt="Vanilla 4"
+            />
+          </div>
+        </article>
+      </section>
+      <div class="contact-me" id="contact-me">
+        <form class="contact--form">
+          <label class="contact--form--label" for="firstName"
+            >First Name:</label
+          >
+          <input
+            class="contact--form--input"
+            type="text"
+            id="firstName"
+            required
+          />
+          <label class="contact--form--label" for="lastName">Last Name:</label>
+          <input
+            class="contact--form--input"
+            type="text"
+            id="lastName"
+            required
+          />
+          <label class="contact--form--label" for="emailId">Your Email:</label>
+          <input
+            class="contact--form--input"
+            type="email"
+            id="emailId"
+            required
+          />
+          <label class="contact--form--label" for="message">Message:</label>
+          <textarea
+            class="contact--form--input"
+            name="message"
+            id="message"
+            cols="30"
+            rows="10"
+            required
+          ></textarea>
+          <button class="button-dark" onclick="SendMail()">Send &larr;</button>
+        </form>
+        <article class="contact--article">
+          <h2>Contact</h2>
+          <p class="contact--article--paragraph">
+            Address: Bulgaria, Stara Zagora , Lorem 123
+          </p>
+          <p class="contact--article--paragraph">Phone: +359999 999 999</p>
+          <p class="contact--article--paragraph">
+            Email: d.mitev920123@gmail.com
+          </p>
+          <p class="contact--article--paragraph">
+            Website:
+            <a href="https://dimitar-mitev-portfolio.vercel.app/"
+              >https://dimitar-mitev-portfolio.vercel.app/</a
+            >
+          </p>
+        </article>
+      </div>
+    </main>
+    <footer class="footer">
+      <p class="footer--paragraph">Copyright &copy; 2023 | Dimitar Mitev</p>
+    </footer>
+  </body>
+</html>
